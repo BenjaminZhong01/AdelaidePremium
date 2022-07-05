@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="463.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adelaidepremiumsystem.QuarterlyReportController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#82d2dc" height="90.0" layoutX="-5.0" stroke="BLACK" strokeType="INSIDE" width="606.0" />
+      <TableView fx:id="qreport" layoutY="89.0" prefHeight="346.0" prefWidth="600.0">
+        <columns>
+           <TableColumn fx:id="orderid" prefWidth="150.99999487400055" text="Order ID" />
+           <TableColumn fx:id="itemid" prefWidth="142.6666717529297" text="Item ID" />
+           <TableColumn fx:id="price" prefWidth="150.0" text="Item Price" />
+           <TableColumn fx:id="date" prefWidth="157.33334350585938" text="Date" />
+        </columns>
+      </TableView>
+      <Label layoutX="150.0" layoutY="15.0" text="Quarterly Report" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="63.0" text="From" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="datelabel" layoutX="367.0" layoutY="63.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="455.0" layoutY="32.0">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="437.0" text="Total Revenue:      $">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="pricelabel" layoutX="482.0" layoutY="439.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

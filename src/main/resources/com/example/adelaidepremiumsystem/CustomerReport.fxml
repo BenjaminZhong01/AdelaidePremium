@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="552.0" prefWidth="822.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adelaidepremiumsystem.CustomerReportController">
+   <children>
+      <StackedBarChart fx:id="stackedBarChart" layoutY="116.0" prefHeight="435.0" prefWidth="429.0" title="Individual Consumption Distribution">
+        <xAxis>
+          <CategoryAxis label="Range ($)" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Price" side="LEFT" />
+        </yAxis>
+      </StackedBarChart>
+      <PieChart fx:id="pieChart" layoutX="428.0" layoutY="134.0" prefHeight="361.0" prefWidth="391.0" title="Gender Distribution" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#82d2dc" height="94.0" stroke="TRANSPARENT" strokeType="INSIDE" width="822.0" />
+      <Text fill="WHITE" layoutX="136.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Demographic Report">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="40.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
